@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>Sign-up Form</h1>
     <form action="">
-        
+        <p id="errname"></p>
+        Enter Name: <input type="text" id="name"> <br>
+        <p id="errnum"></p>
+        Enter Contact: <input type="text" id="num"> <br>
+        <p id="erremail"></p>
+        Enter Email: <input type="text" id="email"> <br>
+        <p id="errpass"></p>
+        Enter Password: <input type="text" id="pass"> <br>
+        <p id="errcpass"></p>
+        Enter Confirm Password: <input type="text" id="cpass"> <br> <br>
+        <input type="Submit" onclick="return formValid()">
     </form>
-
     <script src="app.js"></script>
 </body>
 </html>
