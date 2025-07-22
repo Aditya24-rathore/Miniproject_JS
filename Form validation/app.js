@@ -31,12 +31,24 @@ let formValid=()=>{
         errCpass.innerHTML="Please enter confirm password"
         return false
     }
+    else if(!(Pass.match(/[@$&!]/) &&
+            Pass.match(/[0123456789]/) &&
+            Pass.match(/[A-Z]/) &&
+            Pass.match(/[a-z]/))){
+                errPass.innerHTML="Please enter strong password"
+                return false
+             }
+
     else if(Cpass!=Pass){
         errCpass.innerHTML="Incorrect Confirm Password"
         return false
     }
     else if(Email==""){
         errMail.innerHTML="Please enter email"
+        return false
+    }
+    else if(!Email.includes("@") && Email.includes(".com")){
+        errMail.innerHTML="please enter valid email"
         return false
     }
 }
