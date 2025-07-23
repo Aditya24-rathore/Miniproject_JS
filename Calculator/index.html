@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px" align="center" cellspacing="30px" cellpadding="20px">
+        <tr>
+            <th colspan="4" id="screen"></th>
+        </tr>
+
+        <tr>
+            <td style="color: red;">AC</td>
+            <td style="color:#00C853;" onclick="cal('%')">%</td>
+            <td style="color:#00C853;" >DEL</td>
+            <td style="color:#00C853;" onclick="cal('/')">/</td>
+        </tr>
+
+        <tr>
+            <td onclick="cal('7')">7</td>
+            <td onclick="cal('8')">8</td>
+            <td onclick="cal('9')">9</td>
+            <td style="color:#00C853;" onclick="cal('*')">*</td>
+        </tr>
+
+        <tr>
+            <td onclick="cal('4')">4</td>
+            <td onclick="cal('5')">5</td>
+            <td onclick="cal('6')">6</td>
+            <td style="color:#00C853;" onclick="cal('-')">-</td>
+        </tr>
+
+        <tr>
+            <td onclick="cal('1')">1</td>
+            <td onclick="cal('2')">2</td>
+            <td onclick="cal('3')">3</td>
+            <td style="color:#00C853;" onclick="cal('+')">+</td>
+        </tr>
+
+        <tr>
+            <td onclick="cal('00')">00</td>
+            <td onclick="cal('0')">0</td>
+            <td onclick="cal('.')">.</td>
+            <td style="background-color:#00C853;color: white;" onclick="res()">=</td>
+        </tr>
+    <script src="app.js"></script>
+</body>
+</html>

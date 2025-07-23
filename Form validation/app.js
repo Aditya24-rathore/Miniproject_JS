@@ -30,6 +30,7 @@ let formValid=()=>{
     else if(Cpass==""){
         errCpass.innerHTML="Please enter confirm password"
         return false
+        
     }
     else if(!(Pass.match(/[@$&!]/) &&
             Pass.match(/[0123456789]/) &&
@@ -41,6 +42,8 @@ let formValid=()=>{
 
     else if(Cpass!=Pass){
         errCpass.innerHTML="Incorrect Confirm Password"
+        document.querySelector("#cpass").value=""
+        document.querySelector("#cpass").focus()
         return false
     }
     else if(Email==""){

@@ -1,0 +1,13 @@
+table{
+    border-radius: 20px;
+}
+
+table tr td{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
