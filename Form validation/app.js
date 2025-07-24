@@ -50,7 +50,7 @@ let formValid=()=>{
         errMail.innerHTML="Please enter email"
         return false
     }
-    else if(!Email.includes("@") && Email.includes(".com")){
+    else if(!(Email.includes("@") && Email.includes(".com"))){
         errMail.innerHTML="please enter valid email"
         return false
     }

@@ -15,4 +15,17 @@ let fun=()=>{
            errname.style.border="1px solid red"
            return false
     }
+    else if(isNaN(Num)){
+           errnum.style.border="1px solid red"
+           return false
+    }
+    else if(Num.length!=10){
+        errnum.style.border="1px solid red"
+           return false
+    }
+    else if(!(Email.includes("@") && Email.includes(".com"))){
+        erremail.style.border="1px solid red"
+           return false
+    }
+
 }
