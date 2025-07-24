@@ -1,13 +1,22 @@
 table{
-    border-radius: 20px;
+    border-radius: 5px;
+    background-color:#1b1b1b;
 }
 
 table tr td{
     border-radius: 50%;
+    
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    background-color: white;
-    border: none;
+    color:white;
+    border: 1px solid black;
     cursor: pointer;
+}
+
+table th{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
 }
