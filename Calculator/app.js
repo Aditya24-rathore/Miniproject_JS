@@ -18,7 +18,7 @@ let AC=()=>{
 }
 
 let DEL=()=>{
-    // let display=document.querySelector("#screen")
-    // store=store.slice(0,-1)
-    // display.innerHTML(store)
+    let display=document.querySelector("#screen")
+    store=store.slice(0,-1)
+    display.innerHTML=store
 }

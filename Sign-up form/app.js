@@ -28,14 +28,14 @@ let fun=()=>{
         errnum.style.border="1px solid red"
         document.querySelector("#num").value=""
            document.querySelector("#num").placeholder="Enter valid number"
-       //     document.querySelector("#num").focus()
+           document.querySelector("#num").focus()
            return false
     }
     else if(!(Email.includes("@") && Email.includes(".com"))){
         erremail.style.border="1px solid red"
         document.querySelector("#email").value=""
         document.querySelector("#email").placeholder="Enter valid email"
-       //  document.querySelector("#email").focus()
+        document.querySelector("#email").focus()
            return false
     }
    else if(Pass==""){
@@ -44,8 +44,8 @@ let fun=()=>{
    }
    else if(Cpass!=Pass){
        errcpass.style.border="1px solid red"
-       // document.querySelector("#cpass").value=""
-       //  document.querySelector("#cpass").placeholder="Confirm password not match"
+       document.querySelector("#cpass").value=""
+        document.querySelector("#cpass").placeholder="Confirm password not match"
         return false
    }
 }

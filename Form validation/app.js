@@ -36,7 +36,7 @@ let formValid=()=>{
             Pass.match(/[0123456789]/) &&
             Pass.match(/[A-Z]/) &&
             Pass.match(/[a-z]/))){
-                errPass.innerHTML="Please enter strong password"
+                errPass.innerHTML="Please enter password with one uppercase and symbol"
                 return false
              }
 
@@ -54,4 +54,5 @@ let formValid=()=>{
         errMail.innerHTML="please enter valid email"
         return false
     }
+
 }
