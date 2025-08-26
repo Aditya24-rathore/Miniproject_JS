@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Dice Roll</title>
+</head>
+<style>
+    #dice1{
+        border: 1px solid black;
+        height: 100px;
+    }
+</style>
+<body>
+
+<h2>🎲 Dice Roller</h2>
+<p>Dice 1: <span id="dice1">-</span></p>
+<p>Dice 2: <span id="dice2">-</span></p>
+<p>Total: <span id="total">-</span></p>
+
+<button onclick="rollDice()">Roll Dice</button>
+
+<script>
+function rollDice() {
+    // Generate random numbers from 1 to 6
+    let dice1 = Math.floor(Math.random() * 6) + 1;
+    let dice2 = Math.floor(Math.random() * 6) + 1;
+
+    // Update HTML
+    document.getElementById('dice1').innerText = dice1;
+    document.getElementById('dice2').innerText = dice2;
+    document.getElementById('total').innerText = dice1 + dice2;
+}
+</script>
+
+</body>
+</html>
