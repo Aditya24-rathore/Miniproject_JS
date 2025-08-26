@@ -22,3 +22,19 @@ let DEL=()=>{
     store=store.slice(0,-1)
     display.innerHTML=store
 }
+
+let cay = (value) => {
+    let screen = document.querySelector('#screen');
+    const operators = ['+', '-', '*', '/', '%'];
+
+    
+    const lastChar = store.slice(-1);
+    if (operators.includes(lastChar) && operators.includes(value)) {
+       
+        store = store.slice(0, -1) + value;
+    } else {
+        store += value;
+    }
+
+    screen.innerHTML = store;
+};
